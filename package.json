@@ -1,0 +1,11 @@
+{
+  "name": "helloworld-node-demo",
+  "version": "1.0.0",
+  "description": "Hello World for Docker Init",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Dennis Balinhawang",
+  "license": "ISC"
+}
