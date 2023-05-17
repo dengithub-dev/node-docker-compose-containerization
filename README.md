@@ -15,7 +15,7 @@ docker build -t app .
 
 ### Running the container -docker 
 ```
-docker run -p 8080:8080 -p
+docker run -p 8100:8100 -p
 ```
 
  ## Build and Run the docker compose container service
