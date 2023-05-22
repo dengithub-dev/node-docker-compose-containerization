@@ -13,7 +13,7 @@ A presentation on how to containerize a node app using docker and docker compose
 docker build -t app .
  ```
 
-### Running the container -docker 
+## Running the container -docker 
 ```
 docker run -p 8100:8100 -p
 ```
@@ -21,8 +21,9 @@ docker run -p 8100:8100 -p
  ## Build and Run the docker compose container service
  
  ```
-  docker compose up
-  docker compose up -d --build
+docker compose up -d --build
+docker compose up
+  
  ```
  
  ## Run the app
