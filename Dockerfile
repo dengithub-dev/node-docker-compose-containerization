@@ -12,7 +12,7 @@ FROM node:${NODE_VERSION}-alpine
 ENV NODE_ENV production
 
 
-WORKDIR /usr/src/app
+WORKDIR /node-docker-image
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.npm to speed up subsequent builds.
@@ -30,7 +30,7 @@ USER node
 COPY . .
 
 # Expose the port that the application listens on.
-EXPOSE 8100
+EXPOSE 5000
 
 # Run the application.
 CMD node app.js
