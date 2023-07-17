@@ -32,13 +32,17 @@ docker compose up
  localhost:5000 
  ```
 
- ## Push repo to hub
- ```
-docker tag local-image:tagname new-repo:tagname
-docker push new-repo:tagname
-
-Note: Make sure to change tagname with your desired image repository tag.
- ```
+## Push project to repository
+- public [repository](https://hub.docker.com/repository/docker/dendockerhub/node-docker-image) 
+- Before pushing remotely, in your local, tag the image id as demonstrated below
+  ```
+  docker tag <imageId> dendockerhub/node-docker-image:latest
+  docker tag eeeeeeeee dendockerhub/node-docker-image:latest
+  ```
+- Then, push the image to remote
+    ```
+    docker push dendockerhub/node-docker-image:latest
+    ```
 
  ## Run project anywhere
 - You can simulate the image [here](https://labs.play-with-docker.com/)
