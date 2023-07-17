@@ -32,6 +32,14 @@ docker compose up
  localhost:5000 
  ```
 
+ ## Push repo to hub
+ ```
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
+Note: Make sure to change tagname with your desired image repository tag.
+ ```
+
  ## Run project anywhere
 - You can simulate the image [here](https://labs.play-with-docker.com/)
 - Make sure to pull the project 
